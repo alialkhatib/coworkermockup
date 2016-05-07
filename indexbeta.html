@@ -9,7 +9,34 @@
   login
 
   <div id="campaigns">
+  	<div class="campaign">
+  		<div class="name">
+  			test
+  		</div>
+  		<div class="Description">
+  		</div>  		
+  		<div class="signatures">
+  		</div>
+  		<div class="goal">
+  		</div>
+  		<div class="creator">
+  		</div>
+  	</div>  	
+  	<div class="campaign">
+  		<div class="name">
+  			test2
+  		</div>
+  		<div class="Description">
+  		</div>  		
+  		<div class="signatures">
+  		</div>
+  		<div class="goal">
+  		</div>
+  		<div class="creator">
+  		</div>
+  	</div>  
   </div>
+
 </body>
 
 <script>
@@ -23,13 +50,22 @@ function campaignGenerator(campaignObject){
 
 $(window).ready(function(){
   $.ajax({url:"data.json",success:function(result){
-    for (var ca in result){
-      console.log(result[ca])
+
+  	$.each( result, function( i, ca ) {
+			console.log(ca.signatures);
+			$(".campaign").find(".name").text(ca.name);
+			$(".campaign").find(".Description").text(ca.Description);
+			$(".campaign").find(".signatures").text(ca.signatures);
+			$(".campaign").find(".goal").text(ca.goal);
+			$(".campaign").find(".creator").text(ca.creator);
+  	});
+    
+
       // $("#campaigns").append("<div class='campaign'>"+result[ca].name+"</div>")
-    }
+    
   }
 
-  })
-})
+  });
+});
 </script>
 </html>
