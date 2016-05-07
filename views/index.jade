@@ -2,7 +2,6 @@ extends layout
 block title
   title #{company.name}
 block content
-  
   h2 Petitions within #{company.name}
   each cause in company.campaigns
     .campaign
