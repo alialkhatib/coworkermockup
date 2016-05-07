@@ -1,12 +1,10 @@
-extends layout
-title test
-p hello
+//- extends layout
+title #{company.name} 
+h2 Petitions within #{company.name}
 script.
-  var example=!{company}
-  console.log(example)
-p #{company.name}
+  //- console.log(#{company})
 #campaigns
-  each campaign in company.campaigns
+  each cause in company.campaigns
     .campaign
-      .img
-        p #{campaign.img}
+      span #{cause.creator}
+      img.img(src=cause.img)
