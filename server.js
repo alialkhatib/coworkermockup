@@ -12,11 +12,10 @@ app.use(bodyParser()); // get information from html forms
 var exampleData=
   {
     "name": "Starbucks",
-    "details":
-    {
+    "details": {
       "imgurl":"http://russell.heistuman.com/wordpress/wp-content/uploads/2011/01/starbucks-ring.jpg",
       "industry":"Food and Beverage",
-      "type":"Public — traded as SBUX (NASDAQ)",
+      "type":"Public - traded as SBUX (NASDAQ)",
       "revenue":"$16.447 billion (2014)",
       "workforce":"191,000 employees (2014)",
       "no_locations":"23,768",
@@ -32,7 +31,7 @@ var exampleData=
       "goal":100,
       "img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
       "creator":"Amanda Villot"
-    },{
+        },{
       "id":"campaign2",
       "name":"Starbucks: Tips for Bar2",
       "Description":"I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",

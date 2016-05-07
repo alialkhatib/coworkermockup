@@ -1,18 +1,14 @@
-//- extends layout
-title #{company.name} 
-h2 Petitions within #{company.name}
-script.
-  //- console.log(#{company})
+extends layout
+block title
+  title #{company.name}
+block content
+  
+  h2 Petitions within #{company.name}
   each cause in company.campaigns
     .campaign
-        .img
-          img(src=#{campaign.img})
-        .name
-          
-        .Description
-        .signatures
-        .goal
-        .creator
-      
-      span #{cause.creator}
       img.img(src=cause.img)
+      .name
+      .Description
+      .signatures
+      .goal
+      .creator
