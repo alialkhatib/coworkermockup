@@ -1,45 +1,13 @@
-html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, maximum-scale=1.0')
-    block title
-      title Coworker.org
-    link(rel='profile', href='http://gmpg.org/xfn/11')
-    link(rel='pingback', href='http://about.coworker.org/xmlrpc.php')
-    link(rel='alternate', type='application/rss+xml', title='Coworker » Feed', href='http://about.coworker.org/feed/')
-    link(rel='alternate', type='application/rss+xml', title='Coworker » Comments Feed', href='http://about.coworker.org/comments/feed/')
-    link#coworker-googlefonts-css(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Bree+Serif', type='text/css', media='all')
-    link#coworker-fontawesome-css(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css?ver=4.1.0', type='text/css', media='all')
-    link#coworker-bootstrap-css-css(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css?ver=3.1.1', type='text/css', media='all')
-    link#coworker-style-css(rel='stylesheet', href='http://about.coworker.org/wp-content/themes/coworker/style.css?ver=4.4.2', type='text/css', media='all')
-    link(rel='stylesheet', href='style.css')
-    script(type='text/javascript', src='http://about.coworker.org/wp-includes/js/jquery/jquery.js?ver=1.11.3')
-    script(type='text/javascript', src='http://about.coworker.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1')
-    script(type='text/javascript', src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js?ver=3.1.1')
-    script(type='text/javascript', src='http://about.coworker.org/wp-content/themes/coworker/js/modernizr.js?ver=20140213')
-    script(type='text/javascript', src='http://about.coworker.org/wp-content/themes/coworker/js/wsutil.js?ver=20131209')
-    link(rel='https://api.w.org/', href='http://about.coworker.org/wp-json/')
-    link(rel='EditURI', type='application/rsd+xml', title='RSD', href='http://about.coworker.org/xmlrpc.php?rsd')
-    link(rel='wlwmanifest', type='application/wlwmanifest+xml', href='http://about.coworker.org/wp-includes/wlwmanifest.xml')
-    meta(name='generator', content='WordPress 4.4.2')
-    link(rel='shortlink', href='http://about.coworker.org/?p=174')
-  body.page.page-id-174.page-template-default.group-blog.masthead-fixed.full-width.singular
-    #wrapper.hfeed.site
-      .header-wrapper
-        header#header(role='banner')
-          .header-inner.container.clearfix
-            .logo
-              a(href='http://www.coworker.org')
-                img(src='http://about.coworker.org/wp-content/themes/coworker/images/logo.png', alt='coworker.org')
-            form.navbar-search(action='http://www.coworker.org/petitions/search', method='GET')
-              input.search-query(name='q', placeholder='Search')
-              a#search-campaign.search-button(href="javascript:jQuery('form.navbar-search').submit();")
-                i.fa.fa-search
-            .header-buttons
-              ul.nav
-                li
-                  a#nav-start-petition(href='http://www.coworker.org/petition/new?source=header') Start a campaign
-                li
-                  a#nav-login(href='http://www.coworker.org/users/sign_in') Log in
-      block content
-        p This is not filled in yet
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='', dir='', xmlns:og='http://opengraphprotocol.org/schema/')  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8(lang='', dir='', xmlns:og='http://opengraphprotocol.org/schema/')  
+//if IE 8
+  html.no-js.lt-ie9(lang='', dir='', xmlns:og='http://opengraphprotocol.org/schema/')  
+// [if gt IE 8] <!
+html.no-js(lang='en-US', xmlns:og='http://opengraphprotocol.org/schema/')
+  // <![endif]
+  block head
+    include head
+  block content

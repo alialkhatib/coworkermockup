@@ -14,17 +14,17 @@ app.use('/image',express.static(__dirname + '/image'));
 var exampleData=
   {
     "name": "Starbucks",
-    "details": {
-      "imgurl":"http://russell.heistuman.com/wordpress/wp-content/uploads/2011/01/starbucks-ring.jpg",
-      "industry":"Food and Beverage",
-      "type":"Public - traded as SBUX (NASDAQ)",
-      "revenue":"$16.447 billion (2014)",
-      "workforce":"191,000 employees (2014)",
-      "no_locations":"23,768",
-      "hq":"Seattle, Washington",
-      "ceo":"Howard Schultz",
-      "website":"http://www.starbucks.com"
+    "imgurl":"http://russell.heistuman.com/wordpress/wp-content/uploads/2011/01/starbucks-ring.jpg",
+    "stats": {
+      "Industry":"Food and Beverage",
+      "Type":"Public - traded as SBUX (NASDAQ)",
+      "Revenue":"$16.447 billion (2014)",
+      "Workforce":"191,000 employees (2014)",
+      "Number of Locations":"23,768",
+      "Headquarter Location":"Seattle, Washington",
+      "CEO":"Howard Schultz",
     },
+    "url":"http://www.starbucks.com",
     "campaigns": [{
       "id":"campaign1",
       "url":"/causes/Stsdsdfsfw",
