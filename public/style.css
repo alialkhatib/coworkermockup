@@ -103,7 +103,7 @@ img.emoji {
     
 .name {
     font: 1.2em "Bree Serif",serif;
-    color: red;
+    color: red!important;
     margin: 0 0 10px 0;
     text-transform: uppercase;
     line-height: 1.05;

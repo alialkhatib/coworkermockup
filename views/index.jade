@@ -107,15 +107,13 @@ html.no-js(lang='en-US', xmlns:og='http://opengraphprotocol.org/schema/')
                                   .img
                                     img(src=cause.img)
                                     #parent
-                                      .right (style='width: calc(93/100 * 100%)')
-                                      .left
+                                      .right(style='width: calc(#{cause.goal-cause.signatures}/#{cause.goal} * 100%)')
+                                      .left 
                                       .clear
                                   .content
-                                    .name
-                                      | #{cause.name}
+                                    a.name(href="#") #{cause.name}
                                     .Description
-                                      p
-                                        | #{cause.Description}
+                                      p #{cause.Description}
                                     hr
                                     .signatures
                                       p
