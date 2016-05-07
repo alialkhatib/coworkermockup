@@ -1,3 +1,6 @@
+.campaign {
+    margin-bottom: 30px;
+}
 .join-section {
   display: flex;
   align-items: center;
@@ -117,12 +120,14 @@ img.emoji {
 }
 
 .clear {
-    clear: both;
+    clear: both;    
 }
 
-hr {
+hr {    
     margin: 10px 0;
 }
+
+
 .signatures mark {
     font-size:1.2em;
     color: red;

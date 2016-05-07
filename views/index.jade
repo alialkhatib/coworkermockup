@@ -20,7 +20,7 @@ html.no-js(lang='en-US', xmlns:og='http://opengraphprotocol.org/schema/')
     link#coworker-fontawesome-css(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css?ver=4.1.0', type='text/css', media='all')
     link#coworker-bootstrap-css-css(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css?ver=3.1.1', type='text/css', media='all')
     link#coworker-style-css(rel='stylesheet', href='http://about.coworker.org/wp-content/themes/coworker/style.css?ver=4.4.2', type='text/css', media='all')
-    link(rel='stylesheet', href='/style.css')
+    link(rel='stylesheet', href='/public/style.css')
     link(rel='https://api.w.org/', href='http://about.coworker.org/wp-json/')
     link(rel='EditURI', type='application/rsd+xml', title='RSD', href='http://about.coworker.org/xmlrpc.php?rsd')
     link(rel='wlwmanifest', type='application/wlwmanifest+xml', href='http://about.coworker.org/wp-includes/wlwmanifest.xml')
@@ -101,57 +101,55 @@ html.no-js(lang='en-US', xmlns:og='http://opengraphprotocol.org/schema/')
                       h2 Trending Efforts:
                       .current-efforts
                         div
-                          #campaigns
-                            .campaign
-                              .img
-                                img(src='/image/starbuckstip.jpg')
-                              .content
-                                .name
-                                  | Starbucks: Tips for Bar
-                                .Description
-                                  p
-                                    | I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.
-                                hr
-                                .signatures
-                                  p
-                                    i
-                                      mark 7
-                                      |  of 
-                                      b 100
-                                      |  signatures
-                                .creator
-                                  p
-                                    | Created by 
-                                    mark Amanda Villot
-                              .clear
-                        div
-                          a(href='')
-                            br
-                            img(src='https://s3.amazonaws.com/s3.coworker.org/images/Screenshot_2016-03-11_at_9.36.47_AM.png')
-                            br
+                            #campaigns
+                              each cause in company.campaigns
+                                .campaign
+                                  .img
+                                    img(src=cause.img)
+                                  .content
+                                    .name
+                                      | #{cause.name}
+                                    .Description
+                                      p
+                                        | #{cause.Description}
+                                    hr
+                                    .signatures
+                                      p
+                                        i
+                                          mark #{cause.signatures}
+                                          |  of 
+                                          b #{cause.goal}
+                                          |  signatures
+                                    .goal
+                                    .creator
+                                      p
+                                        | Created by 
+                                        mark #{cause.creator}
+                                  .clear                                  
+                        
                     // col-sm-9
                     .employer-info.col-md-3
                       h2#company_detail
                         | Company Details
                         #logo
                           img(style='border: 1px solid lightgray; padding: 3px; width: 75px', src='https://s3.amazonaws.com/s3.coworker.org/images/Screenshot_2016-03-11_at_9.17.56_AM.png', alt='')
-                        dl
-                          dt Industry:
-                          dd Food and Beverage
-                          dt Type:
-                          dd Public — traded as SBUX (NASDAQ)
-                          dt Revenue:
-                          dd $16.447 billion (2014)
-                          dt Workforce:
-                          dd 191,000 employees (2014)
-                          dt Number of Locations:
-                          dd 23,768
-                          dt HQ Location:
-                          dd Seattle, Washington
-                          dt CEO:
-                          dd Howard Schultz
-                          dt Website:
-                          dd starbucks.com
+                      dl
+                        dt Industry:
+                        dd Food and Beverage
+                        dt Type:
+                        dd Public — traded as SBUX (NASDAQ)
+                        dt Revenue:
+                        dd $16.447 billion (2014)
+                        dt Workforce:
+                        dd 191,000 employees (2014)
+                        dt Number of Locations:
+                        dd 23,768
+                        dt HQ Location:
+                        dd Seattle, Washington
+                        dt CEO:
+                        dd Howard Schultz
+                        dt Website:
+                        dd starbucks.com
                     // employer-info col-sm-3
                   // row
                 // .entry-content
