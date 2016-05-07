@@ -9,6 +9,7 @@ app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser()); // get information from html forms
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/image'));
 var exampleData=
   {
     "name": "Starbucks",
