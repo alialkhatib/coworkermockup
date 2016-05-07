@@ -27,6 +27,7 @@ var exampleData=
     },
     "campaigns": [{
       "id":"campaign1",
+      "url":"/causes/Stsdsdfsfw",
       "name":"1Starbucks: Tips for Bar",
       "Description":"1I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
       "signatures":17,
@@ -35,6 +36,7 @@ var exampleData=
       "creator":"1Amanda Villot"
     },{
       "id":"campaign2",
+      "url":"/causes/Stsdsdfsfw",
       "name":"2Starbucks: Tips for Bar2",
       "Description":"2I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
       "signatures":27,
