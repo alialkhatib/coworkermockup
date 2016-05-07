@@ -1,32 +1,41 @@
 {
   "name": "Starbucks",
-  "details": {
-    "imgurl":"http://russell.heistuman.com/wordpress/wp-content/uploads/2011/01/starbucks-ring.jpg",
-    "industry":"Food and Beverage",
-    "type":"Public - traded as SBUX (NASDAQ)",
-    "revenue":"$16.447 billion (2014)",
-    "workforce":"191,000 employees (2014)",
-    "no_locations":"23,768",
-    "hq":"Seattle, Washington",
-    "ceo":"Howard Schultz",
-    "website":"http://www.starbucks.com"
+  "imgurl":"http://russell.heistuman.com/wordpress/wp-content/uploads/2011/01/starbucks-ring.jpg",
+  "stats": {
+    "Industry":"Food and Beverage",
+    "Type":"Public - traded as SBUX (NASDAQ)",
+    "Revenue":"$16.447 billion (2014)",
+    "Workforce":"191,000 employees (2014)",
+    "Number of Locations":"23,768",
+    "Headquarter Location":"Seattle, Washington",
+    "CEO":"Howard Schultz",
   },
+  "url":"http://www.starbucks.com",
   "campaigns": [{
     "id":"campaign1",
-    "url":"/causes/Stsdsdfsfw",
-    "name":"1Starbucks: Tips for Bar",
-    "Description":"1I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
-    "signatures":17,
-    "goal":1100,
+    "url":"#",
+    "name":"Nail Polish/Nails/Piercings",
+    "Description":"I think we should be able to wear nail polish and have nails and have piercings, we, why should we suffer and have to change ourseleves to get a job and especially a job that has to do with coffee, I don't get how our nails and piercings will affect our job?",
+    "signatures":37,
+    "goal":100,
     "img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
     "creator":"1Amanda Villot"
   },{
     "id":"campaign2",
-    "url":"/causes/Stsdsdfsfw",
-    "name":"2Starbucks: Tips for Bar2",
-    "Description":"2I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
-    "signatures":27,
-    "goal":2100,
+    "url":"#",
+    "name":"Nail Polish Allowed to be worn at work",
+    "Description":"I would like the dress code policy to be reviewed as it comes to nail polish not being allowed during working hours. I recently went on vacation and used the gel nail polish. Never did it clip off and it was extremely hard for me to remove before my return to work.",
+    "signatures":137,
+    "goal":200,
+    "img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
+    "creator":"2Amanda Villot"
+    },{
+    "id":"campaign3",
+    "url":"#",
+    "name":"Starbucks: Let us be pierced...Freely",
+    "Description":"Allow partners to have less restrictions on piercing quantity and placement.",
+    "signatures":43,
+    "goal":100,
     "img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
     "creator":"2Amanda Villot"
   }]
