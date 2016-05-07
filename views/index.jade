@@ -1,4 +1,4 @@
-extends layout
+//-extends layout
 title test
 p hello
 script.
@@ -8,5 +8,13 @@ p #{company.name}
 #campaigns
   each campaign in company.campaigns
     .campaign
-      .img
-        p #{campaign.img}
+      .campaign
+        .img
+          img(src=#{campaign.img})
+        .name
+          
+        .Description
+        .signatures
+        .goal
+        .creator
+      

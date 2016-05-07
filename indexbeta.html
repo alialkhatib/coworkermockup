@@ -10,6 +10,9 @@
 
   <div id="campaigns">
   	<div class="campaign">
+  		<div class="img">
+  			<img src="" />
+  		</div>
   		<div class="name">
   			test
   		</div>
@@ -23,6 +26,9 @@
   		</div>
   	</div>  	
   	<div class="campaign">
+  		<div class="img">
+  			<img src="" />
+  		</div>
   		<div class="name">
   			test2
   		</div>
@@ -51,13 +57,23 @@ function campaignGenerator(campaignObject){
 $(window).ready(function(){
   $.ajax({url:"data.json",success:function(result){
 
-  	$.each( result, function( i, ca ) {
-			
-			$(".campaign").find(".name").text(ca.name);
-			$(".campaign").find(".Description").text(ca.Description);
-			$(".campaign").find(".signatures").text(ca.signatures);
-			$(".campaign").find(".goal").text(ca.goal);
-			$(".campaign").find(".creator").text(ca.creator);
+  	var camp_list = $("#campaigns");
+
+  	$.each(result, function( i, company ) {  		
+
+  		$.each(company.campaigns, function( j, ca ) {			
+
+				$(".campaign").find(".name").text(ca.name);
+				$(".campaign").find("img").attr("src", ca.img);
+				$(".campaign").find(".Description").text(ca.Description);
+				$(".campaign").find(".signatures").text(ca.signatures);
+				$(".campaign").find(".goal").text(ca.goal);
+				$(".campaign").find(".creator").text(ca.creator);
+
+			});
+
+  		console.log(company.details.imgurl);
+
   	});
     
 
