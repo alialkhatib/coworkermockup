@@ -1,0 +1,11 @@
+{
+  "name": "coworker",
+  "license": "MIT",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0"
+  }
+}
