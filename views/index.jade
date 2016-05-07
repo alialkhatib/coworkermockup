@@ -1,8 +1,12 @@
-html
-  head
-    title CoWorker.org
-  body
-    p Campaigns regarding #{company.name}
-    ul
-      each val in company.campaigns
-        li= val
+extends layout
+title test
+p hello
+script.
+  var example=!{company}
+  console.log(example)
+p #{company.name}
+#campaigns
+  each campaign in company.campaigns
+    .campaign
+      .img
+        p #{campaign.img}
