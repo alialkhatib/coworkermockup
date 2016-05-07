@@ -3,11 +3,28 @@ block title
   title #{company.name}
 block content
   h2 Petitions within #{company.name}
-  each cause in company.campaigns
-    .campaign
-      img.img(src=cause.img)
-      .name
-      .Description
-      .signatures
-      .goal
-      .creator
+  #campaigns
+    each cause in company.campaigns
+      .campaign
+        .img
+          img(src=cause.img)
+        .content
+          .name
+            | #{cause.name}
+          .Description
+            p
+              | #{cause.Description}
+          hr
+          .signatures
+            p
+              i
+                mark #{cause.signatures}
+                |  of 
+                b #{cause.goal}
+                |  signatures
+          .goal
+          .creator
+            p
+              | Created by 
+              mark #{cause.creator}
+        .clear

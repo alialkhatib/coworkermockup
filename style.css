@@ -78,3 +78,102 @@ img.emoji {
   background: none !important;
   padding: 0 !important;
 }
+
+#company_detail {
+    text-transform: uppercase; 
+    padding-left: 20px; 
+    padding-bottom: 20px;
+}
+.navbar-search {
+    margin-top: 18px;
+}
+
+.img {
+    width: 20%;
+    float: left;
+}
+.content {
+    width: 80%;
+    float: left;
+    padding-left: 15px;
+}
+    
+.name {
+    font: 1.2em "Bree Serif",serif;
+    color: red;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    line-height: 1.05;
+}
+
+.signatures {
+    float: left;
+    font-size: 0.8em;
+}
+.creator {
+    float: right;
+    font-size: 0.8em;
+    color: #999999;
+}
+
+.clear {
+    clear: both;
+}
+
+hr {
+    margin: 10px 0;
+}
+.signatures mark {
+    font-size:1.2em;
+    color: red;
+    background: none;
+}
+
+.creator mark {
+    font-weight: 600;
+    color: #000000;
+    background: none;
+}
+
+.current-efforts {
+    padding-right: 50px;
+}
+
+#logo {
+    padding-left: 25px;
+}
+
+@media (max-width:991px) {
+    #company_detail {
+        padding-left: 0; 
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .img {
+        width: 100%;
+        float: none;
+    }
+    .content {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+    .name {
+        margin-top: 10px;
+    }
+    
+    .current-efforts {
+        padding-right: 0;
+    }
+    #logo {
+        padding-left: 0;
+    }
+    
+    .employer-info dl {
+        padding-top: 24px; 
+        padding-left: 0; 
+    }
+}
+
