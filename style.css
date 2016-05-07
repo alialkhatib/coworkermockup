@@ -28,6 +28,8 @@
     border: none;
     padding: 15px !important;
 }
+
+/* Hello */
 .ak-styled-submit-button, .ak-email.ak-share-button {
     background-image: linear-gradient(#dc2a21 20%,#ff0000 100%);
     background-color: red;
