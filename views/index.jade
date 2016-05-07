@@ -106,6 +106,10 @@ html.no-js(lang='en-US', xmlns:og='http://opengraphprotocol.org/schema/')
                                 .campaign
                                   .img
                                     img(src=cause.img)
+                                    #parent
+                                      .right (style='width: calc(93/100 * 100%)')
+                                      .left
+                                      .clear
                                   .content
                                     .name
                                       | #{cause.name}
@@ -119,12 +123,13 @@ html.no-js(lang='en-US', xmlns:og='http://opengraphprotocol.org/schema/')
                                           mark #{cause.signatures}
                                           |  of 
                                           b #{cause.goal}
-                                          |  signatures
+                                          |  signatures      
                                     .goal
                                     .creator
                                       p
                                         | Created by 
                                         mark #{cause.creator}
+                                        img.profile(src='image/profile.jpeg')
                                   .clear                                  
                         
                     // col-sm-9

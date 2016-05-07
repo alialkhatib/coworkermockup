@@ -120,18 +120,17 @@ img.emoji {
 }
 
 .clear {
-    clear: both;    
+    clear: both;
 }
 
-hr {    
+hr {
     margin: 10px 0;
 }
-
-
 .signatures mark {
     font-size:1.2em;
     color: red;
     background: none;
+    font-weight: 600;
 }
 
 .creator mark {
@@ -146,6 +145,28 @@ hr {
 
 #logo {
     padding-left: 25px;
+}
+
+#parent {
+    overflow: hidden;
+    margin-top: 4px;
+}
+.right {
+    float: right;
+    height: 4px;    
+    background: #ddd;
+}
+.left {
+    overflow: hidden;
+    height: 4px;
+    background: red;
+}
+
+.profile {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    vertical-align:middle;
 }
 
 @media (max-width:991px) {
