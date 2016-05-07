@@ -8,8 +8,9 @@ var port     = process.env.PORT || 8000;
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser()); // get information from html forms
 
-app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/image'));
+app.use('/public',express.static(__dirname + '/public'));
+app.use('/image',express.static(__dirname + '/image'));
+
 var exampleData=
   {
     "name": "Starbucks",
