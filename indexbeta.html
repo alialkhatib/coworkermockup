@@ -43,8 +43,8 @@
 
 function campaignGenerator(campaignObject){
   var output="<div class='campaign'>";
-  output+="<span class='title'>"
-  output+="</div>"
+  output+="<span class='title'>";
+  output+="</div>";
 }
 
 
@@ -52,7 +52,7 @@ $(window).ready(function(){
   $.ajax({url:"data.json",success:function(result){
 
   	$.each( result, function( i, ca ) {
-			console.log(ca.signatures);
+			
 			$(".campaign").find(".name").text(ca.name);
 			$(".campaign").find(".Description").text(ca.Description);
 			$(".campaign").find(".signatures").text(ca.signatures);
@@ -63,6 +63,7 @@ $(window).ready(function(){
 
       // $("#campaigns").append("<div class='campaign'>"+result[ca].name+"</div>")
     
+
   }
 
   });
