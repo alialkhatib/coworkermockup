@@ -26,20 +26,20 @@ var exampleData=
     },
     "campaigns": [{
       "id":"campaign1",
-      "name":"Starbucks: Tips for Bar",
-      "Description":"I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
-      "signatures":7,
-      "goal":100,
+      "name":"1Starbucks: Tips for Bar",
+      "Description":"1I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
+      "signatures":17,
+      "goal":1100,
       "img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
-      "creator":"Amanda Villot"
+      "creator":"1Amanda Villot"
     },{
       "id":"campaign2",
-      "name":"Starbucks: Tips for Bar2",
-      "Description":"I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
-      "signatures":7,
-      "goal":100,
+      "name":"2Starbucks: Tips for Bar2",
+      "Description":"2I would like for a tip jar to be placed at hand off so that we have a chance of gaining more tips. Especially for the baristas who are speedy and accurate on bar. It will also motivate them to improve their customer service at hand off.",
+      "signatures":27,
+      "goal":2100,
       "img":"https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
-      "creator":"Amanda Villot"
+      "creator":"2Amanda Villot"
     }]
   };
 

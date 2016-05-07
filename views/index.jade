@@ -3,16 +3,30 @@ title #{company.name}
 h2 Petitions within #{company.name}
 script.
   //- console.log(#{company})
+#campaigns
   each cause in company.campaigns
     .campaign
-        .img
-          img(src=#{campaign.img})
+      .img
+        img(src=cause.img)
+      .content
         .name
-          
+          | #{cause.name}
         .Description
+          p
+            | #{cause.Description}
+        hr
         .signatures
+          p
+            i
+              mark #{cause.signatures}
+              |  of 
+              b #{cause.goal}
+              |  signatures
         .goal
         .creator
-      
-      span #{cause.creator}
-      img.img(src=cause.img)
+          p
+            | Created by 
+            mark #{cause.creator}
+      .clear
+
+    
