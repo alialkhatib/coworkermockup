@@ -7,5 +7,29 @@
   search
   start a campaign
   login
+
+  <div id="campaigns">
+  </div>
 </body>
+
+<script>
+
+function campaignGenerator(campaignObject){
+  var output="<div class='campaign'>";
+  output+="<span class='title'>"
+  output+="</div>"
+}
+
+
+$(window).ready(function(){
+  $.ajax({url:"data.json",success:function(result){
+    for (var ca in result){
+      console.log(result[ca])
+      // $("#campaigns").append("<div class='campaign'>"+result[ca].name+"</div>")
+    }
+  }
+
+  })
+})
+</script>
 </html>
