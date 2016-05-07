@@ -26,4 +26,8 @@ app.get('/causes/:company_name', function(req, res){
 })
 });
 
+app.get('/',function(req,res){
+  res.redirect('/causes/Starbucks')
+})
+
 app.listen(port);
